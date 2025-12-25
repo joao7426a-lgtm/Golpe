@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Logo e Botão</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 1rem 5%;
+            display: flex;
+            align-items: center;
+            /* O 'justify-content' abaixo empurra o logo para um lado e o botão para o outro */
+            justify-content: space-between; 
+            border-bottom: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .logo img {
+            height: 45px;
+            display: block;
+        }
+
+        /* Estilização do Botão */
+        .btn-acao {
+            background-color: #007bff; /* Cor azul */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-decoration: none; /* Remove sublinhado se for link */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-acao:hover {
+            background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+        }
+
+        main {
+            padding: 40px 5%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/150x50?text=LOGO" alt="Logotipo">
+        </div>
+
+        <button class="btn-acao" onclick="alert('Botão clicado!')">
+            Clique Aqui
+        </button>
+    </header>
+
+    <main>
+        <h1>Layout Atualizado</h1>
+        <p>Agora você tem o logo à esquerda e um botão de ação à direita.</p>
+    </main>
+
+</body>
+</html>
