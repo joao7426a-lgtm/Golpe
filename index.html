@@ -3,70 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caixa</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        header {
-            background-color: #ffffff;
-            padding: 1rem 5%;
-            display: flex;
-            align-items: center;
-            /* O 'justify-content' abaixo empurra o logo para um lado e o botão para o outro */
-            justify-content: space-between; 
-            border-bottom: 1px solid #eee;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        .logo img {
-            height: 125px;
-            display: block;
-        }
-
-        /* Estilização do Botão */
-        .btn-acao {
-            background-color: #007bff; /* Cor azul */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-family: sans-serif;
-            font-weight: bold;
-            text-decoration: none; /* Remove sublinhado se for link */
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-acao:hover {
-            background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
-        }
-
-        main {
-            padding: 40px 5%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-    </style>
+    <title>Minha Página de Download</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="logo.png"250x100?text=LOGO" alt="Logotipo">
-        </div>
-
-        <button class="btn-acao" onclick="alert('Botão clicado!')">
-            Conta
-        </button>
-    </header>
-
-    <main>
-        </h1>
-        </p>
-    </main>
+    <div class="container">
+        <h1>Olá! Pronto para baixar?</h1>
+        <p>Clique no botão abaixo para obter o seu arquivo com segurança.</p>
+        
+        <a href="arquivo.pdf" download class="btn-download">
+            Baixar Arquivo
+        </a>
+    </div>
 
 </body>
 </html>
+
+
